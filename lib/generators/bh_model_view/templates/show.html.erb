@@ -1,0 +1,13 @@
+<%%= panel title: 'View #{class_name.capitalize}' do %>
+  <table class='table table-hover'>
+    <thead>
+      <tr>
+<%=header_columns%>
+        <th></th><!-- actions column -->
+      </tr>
+    </thead>
+    <tbody>
+      <%%= render @<%=plural_name.singularize%> %>
+    </tbody>
+  </table>
+<%% end %>
